@@ -1,0 +1,125 @@
+# =====================================================================
+#  REFUGIO CHICUREO — club de pádel en Chicureo
+#  Generar:  python3 ../plantilla-padel/build.py club.yml
+#  Todo lo marcado con "muestra: true" es contenido de ejemplo: reemplazar
+#  cuando el club mande el dato real (dirección, horarios, precios, equipo…).
+# =====================================================================
+
+nombre: Refugio Chicureo
+slug: refugiochicureo
+salida: .
+
+seo:
+  titulo: Refugio Chicureo · Club de pádel en Chicureo
+  descripcion: Club de pádel en Chicureo. Clases por nivel, partidos todas las semanas y reservas de cancha por WhatsApp.
+  imagen: assets/fotos/hero.jpg
+
+marca:
+  logo: assets/marca/logo.png          # recortado del logo original (originales/)
+  logo_ancho: 1156
+  logo_alto: 350
+  favicon: assets/marca/favicon.png
+  apple_icon: assets/marca/favicon.png
+
+contacto:
+  whatsapp: "56950210162"
+  whatsapp_visible: +56 9 5021 0162
+  reservas:                            # las reservas son por WhatsApp
+    nombre: WhatsApp
+    url: "https://wa.me/56950210162?text=Hola%20Refugio%20Chicureo%2C%20quiero%20reservar%20una%20cancha."
+  instagram: ""                        # PENDIENTE: falta la cuenta de Instagram (sin dato, el enlace no aparece)
+  facebook: ""
+
+ubicacion:
+  barrio: Chicureo
+  zona: Colina · Santiago
+  comuna: Colina
+  direccion: Av. Chicureo 2300
+  referencia: Chicureo, Colina
+  direccion_corta: Av. Chicureo 2300, Colina
+  direccion_completa: Av. Chicureo 2300, Chicureo, Colina, Región Metropolitana
+  mapa: Avenida Chicureo 2300, Colina, Chile
+  muestra: "Dirección por confirmar"     # sacada de una guía de canchas en internet; confirmar con el club
+
+horarios:
+  0: 09:00 – 21:00
+  1: 08:00 – 23:00
+  2: 08:00 – 23:00
+  3: 08:00 – 23:00
+  4: 08:00 – 23:00
+  5: 08:00 – 23:00
+  6: 08:00 – 22:00
+horarios_muestra: "Horario de ejemplo"
+
+hero:
+  poster: assets/fotos/hero.jpg        # imagen de marca del club (cancha + logo)
+
+dato_hero:
+  numero: "4"
+  texto: "canchas en el corazón<br>de Chicureo"
+  muestra: true
+
+metodo:
+  nombre: Método Refugio
+  titulo_html: "Método <em>Refugio.</em>"
+  foto: assets/fotos/cancha.jpg
+  foto_alt: Cancha de pádel
+  muestra: true
+
+garantia:
+  dias: 60
+  muestra: true
+
+partners_muestra: true
+partners:
+  - { nombre: Babolat, logo: assets/partners/babolat.png, ancho: 480, alto: 105 }
+  - { nombre: Bullpadel, logo: assets/partners/bullpadel.png, ancho: 147, alto: 120 }
+  - { nombre: adidas, logo: assets/partners/adidas.png, ancho: 184, alto: 120 }
+  - { nombre: Gatorade, logo: assets/partners/gatorade.png, ancho: 155, alto: 120 }
+
+equipo_muestra: true
+equipo:
+  - { nombre: Camila Rojas, cargo: Directora, foto: assets/equipo/equipo-1.jpg, bio: "Armó el Refugio para que Chicureo tuviera un club donde aprender, jugar y quedarse." }
+  - { nombre: Valentina Soto, cargo: Head coach, foto: assets/equipo/equipo-2.jpg, bio: "Define el plan de cada grupo y evalúa a todos los que llegan al club." }
+  - { nombre: Daniela Fuentes, cargo: Entrenadora, foto: assets/equipo/equipo-3.jpg, bio: "Especialista en iniciación: si nunca has tomado una pala, partes con ella." }
+
+resenas:
+  nota: "4,9"
+  cantidad: 120
+  muestra: true
+  lista:
+    - { nombre: Francisca M., detalle: "Socia · hace 1 mes", texto: "Un refugio de verdad: buen ambiente, profes atentos y siempre hay con quién jugar." }
+    - { nombre: Sebastián A., detalle: "Socio · hace 3 semanas", texto: "Reservar por WhatsApp es rapidísimo y las canchas están impecables." }
+    - { nombre: Antonia V., detalle: "Jugadora · hace 2 meses", texto: "Partí desde cero con mis amigas y ahora jugamos todos los jueves en la noche." }
+
+precios:
+  grupos: [4, 2]
+  mensual: { 4: 54990, 2: 84990 }
+  anual:   { 4: 45990, 2: 71990 }
+  muestra: true
+
+paleta:
+  marca: "#17656C"        # petróleo del logo
+  oscuro: "#0B2C30"
+  acento: "#BED821"       # verde lima de los trazos del logo
+  tono: "#5FB7C2"         # agua (cancha)
+  tono_oscuro: "#0A778E"
+  crema: "#F1F6EA"
+  fondo_claro: "#F7FAF3"
+
+textos:
+  footer:
+    reservas: Reservas
+    lema: "El refugio del pádel en Chicureo. Entrena, conecta, compite."
+
+estilo:
+  tipografia: geometrica   # redondeada y ancha, como "chicureo" del logo
+  forma: redonda           # curvas del logo
+  hero: dividido           # la imagen de marca va en el recuadro, sin texto encima
+  etiquetas: barra
+  variante_textos: 3
+  secciones: [club, partners, metodo, garantia, equipo, resenas, banda, visita, cta]
+  menu: [club, metodo, precios, equipo, visita]
+  propuesta_inicial: marca
+  selector_propuestas: true
+  nombres_propuestas: { marca: "A · Petróleo", clara: "B · Clara" }
