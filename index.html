@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Refugio Chicureo · Club de pádel en Chicureo</title>
 <meta name="description" content="Club de pádel en Chicureo. Clases por nivel, partidos todas las semanas y reservas de cancha por WhatsApp.">
-<meta name="theme-color" content="#17656C">
+<meta name="theme-color" content="#11565C">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Refugio Chicureo · Club de pádel en Chicureo">
 <meta property="og:description" content="Club de pádel en Chicureo. Clases por nivel, partidos todas las semanas y reservas de cancha por WhatsApp.">
@@ -29,18 +29,18 @@
   --display-tracking: -.02em;
   --display-style: normal;
 
-  --brand: #17656C;
+  --brand: #11565C;
   --navy: #0B2C30;
   --navy-deep: #071D1F;
   --ball: #BED821;
-  --wood: #5FB7C2;
+  --wood: #8FD3DB;
   --earth: #0A778E;
   --cream: #F1F6EA;
 
   --bg: #F7FAF3;
-  --bg-alt: #ECF5F0;
+  --bg-alt: #F0F7F1;
   --surface: #FFFFFF;
-  --surface-2: #E0F0EC;
+  --surface-2: #E7F4EF;
   --text: #0B2C30;
   --text-2: #3C5659;
   --text-3: #5C7274;
@@ -51,8 +51,8 @@
   --btn-text: #FFFFFF;
   --logo: var(--brand);
   --header-bg: rgba(247,250,243,0.92);
-  --placeholder-a: #E5F2ED;
-  --placeholder-b: #D9EDE9;
+  --placeholder-a: #EBF5F0;
+  --placeholder-b: #E2F2EE;
   --partner-filter: brightness(0) opacity(.42);
   --focus: var(--brand);
   --accent: var(--ball);
@@ -81,10 +81,10 @@
 }
 /* Propuesta de marca (domina el color principal) */
 :root[data-palette="marca"]{
-  --bg: #17656C;
-  --bg-alt: #13555B;
-  --surface: #1B7981;
-  --surface-2: #208C96;
+  --bg: #11565C;
+  --bg-alt: #0E464B;
+  --surface: #156A72;
+  --surface-2: #197E87;
   --text: #F1F6EA;
   --text-2: #CAE0E2;
   --text-3: #A4C8CC;
@@ -94,18 +94,18 @@
   --btn-bg: var(--ball);
   --btn-text: var(--navy);
   --logo: #FFFFFF;
-  --header-bg: rgba(23,101,108,0.94);
-  --placeholder-a: #1B7981;
-  --placeholder-b: #208C96;
+  --header-bg: rgba(17,86,92,0.94);
+  --placeholder-a: #156A72;
+  --placeholder-b: #197E87;
   --partner-filter: brightness(0) invert(1) opacity(.55);
   --focus: var(--ball);
 }
 /* Variantes oscuras */
 :root[data-theme="dark"]{ --bg: #121417; --bg-alt: #181B1F; --surface: #1F2328; --surface-2: #272C33; --text: #F2EFE8; --text-2: #C3CBD8; --text-3: #A0AABB; --line: rgba(242,239,232,.12); --hl: var(--ball); --tone: var(--wood); --btn-bg: var(--ball); --btn-text: var(--navy); --header-bg: rgba(18,20,23,.92); --placeholder-a: #1F2328; --placeholder-b: #272C33; --partner-filter: brightness(0) invert(1) opacity(.5); --focus: var(--ball); --logo: #FFFFFF; }
-:root[data-palette="marca"][data-theme="dark"]{ --bg: #082326; --bg-alt: #0B2F32; --surface: #0E3F43; --surface-2: #124F54; --header-bg: rgba(8,35,38,0.92); --placeholder-a: #0E3F43; --placeholder-b: #124F54; }
+:root[data-palette="marca"][data-theme="dark"]{ --bg: #072427; --bg-alt: #0A3034; --surface: #0D4045; --surface-2: #105056; --header-bg: rgba(7,36,39,0.92); --placeholder-a: #0D4045; --placeholder-b: #105056; }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){ --bg: #121417; --bg-alt: #181B1F; --surface: #1F2328; --surface-2: #272C33; --text: #F2EFE8; --text-2: #C3CBD8; --text-3: #A0AABB; --line: rgba(242,239,232,.12); --hl: var(--ball); --tone: var(--wood); --btn-bg: var(--ball); --btn-text: var(--navy); --header-bg: rgba(18,20,23,.92); --placeholder-a: #1F2328; --placeholder-b: #272C33; --partner-filter: brightness(0) invert(1) opacity(.5); --focus: var(--ball); --logo: #FFFFFF; }
-  :root[data-palette="marca"]:not([data-theme="light"]){ --bg: #082326; --bg-alt: #0B2F32; --surface: #0E3F43; --surface-2: #124F54; --header-bg: rgba(8,35,38,0.92); --placeholder-a: #0E3F43; --placeholder-b: #124F54; }
+  :root[data-palette="marca"]:not([data-theme="light"]){ --bg: #072427; --bg-alt: #0A3034; --surface: #0D4045; --surface-2: #105056; --header-bg: rgba(7,36,39,0.92); --placeholder-a: #0D4045; --placeholder-b: #105056; }
 }
 
 /* =========================================================
@@ -199,7 +199,7 @@ p{margin:0}
 .header.is-scrolled{border-bottom-color:var(--line)}
 .header__in{height:100%;display:flex;align-items:center;gap:24px}
 /* El logo se achica si no cabe: los botones del encabezado nunca quedan fuera de la pantalla */
-.brand{display:flex;align-items:center;text-decoration:none;flex:0 1 auto;min-width:0}
+.brand{display:flex;align-items:center;min-height:44px;text-decoration:none;flex:0 1 auto;min-width:0}
 .brand{color:var(--logo)}
 .brand__logo{display:block;height:auto;width:calc(44px * 1156 / 350);max-width:100%;aspect-ratio:1156/350;background:currentColor;
   -webkit-mask:url("assets/marca/logo.png") center/contain no-repeat;mask:url("assets/marca/logo.png") center/contain no-repeat;
@@ -444,7 +444,7 @@ p{margin:0}
 .reviews{display:grid;gap:16px;grid-template-columns:1fr;list-style:none;margin:0;padding:0}
 .review{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:28px;display:flex;flex-direction:column;gap:18px}
 .review blockquote{margin:0;font-size:1.0625rem;line-height:1.6}
-.review footer{margin-top:auto;display:flex;align-items:center;gap:12px;font-size:.875rem;color:var(--text-3)}
+.review footer{margin-top:auto;display:flex;align-items:center;gap:12px;font-size:.875rem;color:var(--text-2)}
 .review footer b{display:block;color:var(--text);font-weight:600}
 .avatar{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:var(--surface-2);font-weight:600;color:var(--text)}
 .reviews__more{margin-top:28px}

@@ -99,10 +99,10 @@ precios:
   muestra: true
 
 paleta:
-  marca: "#17656C"        # petróleo del logo
+  marca: "#11565C"        # petróleo del logo, un punto más profundo para que lima y textos claros pasen 4,5:1
   oscuro: "#0B2C30"
   acento: "#BED821"       # verde lima de los trazos del logo
-  tono: "#5FB7C2"         # agua (cancha)
+  tono: "#8FD3DB"         # agua (cancha), claro para leerse sobre el petróleo
   tono_oscuro: "#0A778E"
   crema: "#F1F6EA"
   fondo_claro: "#F7FAF3"
